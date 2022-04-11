@@ -35,9 +35,13 @@ namespace ControleMedicamentos.ConsoleApp.ModuloRequisicao
 
         public override string MostrarOpcoes() // nao esta indo!!! ns como q tira o base ali encima sem dar erro
         {
+            MostrarTitulo("Requisitar um medicamento");
             Console.WriteLine("Digite 1 para Inserir");
             Console.WriteLine("Digite 2 para Visualizar");
-            return base.MostrarOpcoes();
+
+            string opcao = Console.ReadLine();
+
+            return opcao;
         }
 
         public void Inserir()
